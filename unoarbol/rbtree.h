@@ -183,7 +183,7 @@ class RBTree{
                 if(x == x->p->left){
                     w= x->p->right;
                     if(w->color == Color::RED){
-                        w->color == Color::BLACK;
+                        w->color = Color::BLACK;
                         x->p->color = Color::RED;
                         rotateLeft(x->p);
                         w = x->p->right;
@@ -208,7 +208,7 @@ class RBTree{
                 else{
                     w= x->p->left;
                     if(w->color == Color::RED){
-                        w->color == Color::BLACK;
+                        w->color = Color::BLACK;
                         x->p->color = Color::RED;
                         rotateRight(x->p);
                         w = x->p->left;
